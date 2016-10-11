@@ -1,0 +1,30 @@
+file:///H:/Documents/Game%20Dev%202016%20-%20Michael/First%20Test.html
+
+<b>Show</b> Michael <br><br>
+
+<input id="myInput" type=text value="Hola"> <br><br>
+
+<input type=button value="Run Wow" onclick="{
+ 
+ myOut = document.getElementById('myArea')
+ myIn  = document.getElementById('myInput')
+ //alert(myIn.value)	
+  
+for (myCount = 5; myCount >= 1; myCount--){
+   
+ myOut.innerHTML += myCount + ' ' + myIn.value
+   
+   if (myCount == 3){
+   
+    myOut.innerHTML += ' Cool'
+     
+   }
+   myOut.innerHTML += '<br>'
+ }
+
+}"> <br><br>
+
+<div id="myArea" > Your output will go here <br></div> <br>
+<input type=button value="Show myOut" onclick="{
+ alert('The variable myOut contains ' + myOut.innerHTML)
+}">
